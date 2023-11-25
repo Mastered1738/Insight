@@ -2,19 +2,24 @@
 	import '../app.css';
 </script>
 
-<div class="flex justify-center items-center h-screen">
-	<form action="" class="grid grid-cols-1 place-items-center space-y-6 bg-beige rounded-xl w-80">
-		<img class="" src="./src/multimedia/Logo.png" alt="Insight logo" />
-		<h1 class="text-darkblue text-2xl">Insight</h1>
+<div class="relative flex justify-center items-center h-screen">
+	<img class="absolute z-10 w-24 top-36" src="./src/multimedia/Logo.png" alt="Insight logo" />
+	<form
+		action=""
+		class="absolute grid grid-cols-1 place-items-center space-y-6 bg-beige rounded-xl w-80 pb-6"
+	>
+		<h1 class="text-darkblue text-2xl mt-16">Insight</h1>
 		<div class="grid grid-cols-1 place-items-start">
 			<label for="">Korisnicko ime:</label>
-			<input type="text" class="bg-bgbrown" />
+			<input type="text" class="bg-bgbrown px-3 py-1 rounded-xl" />
 		</div>
 		<div class="grid grid-cols-1 place-items-start">
 			<label for="">Lozinka:</label>
-			<input type="password" class="bg-bgbrown" />
+			<input type="password" class="bg-bgbrown px-3 py-1 rounded-xl" />
 		</div>
-		<button class="bg-darkblue text-beige px-8">Log in</button>
+		<button class="bg-darkblue text-beige px-20 py-1 rounded-xl hover:bg-strongpurple"
+			>Log in</button
+		>
 	</form>
 </div>
 

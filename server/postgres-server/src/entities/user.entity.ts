@@ -1,7 +1,13 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  JoinColumn,
+  ManyToOne,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 import { UserType } from './userType.entity';
 
-@Entity()
+@Entity({ name: 'User' })
 export class User {
   @PrimaryGeneratedColumn()
   user_id: number;
@@ -16,6 +22,10 @@ export class User {
   password: string;
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  @ManyToOne((type) => UserType, (userType) => userType.user_type_id)
+  @ManyToOne(() => UserType)
+  @JoinColumn({
+    name: 'user_type',
+    referencedColumnName: 'user_type_id',
+  })
   user_type: UserType;
 }

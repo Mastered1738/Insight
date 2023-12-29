@@ -8,6 +8,6 @@ export class UserController {
 
   @Get('/getAll')
   async getAllPosts(): Promise<User[]> {
-    return this.userService.findAllPosts();
+    return this.userService.findAllUsers();
   }
 }

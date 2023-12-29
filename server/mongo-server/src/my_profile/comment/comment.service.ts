@@ -4,13 +4,13 @@ import { Model } from 'mongoose';
 import { Comment } from './comment.schema';
 
 @Injectable()
-export class PostService {
+export class CommentService {
   constructor(
     @InjectModel(Comment.name, 'mongo')
     private readonly commentModel: Model<Comment>,
   ) {}
 
-  async findAllPosts(): Promise<Comment[]> {
+  async findAllComments(): Promise<Comment[]> {
     return this.commentModel.find();
   }
 }

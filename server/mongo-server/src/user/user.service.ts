@@ -10,7 +10,7 @@ export class UserService {
     private readonly userModel: Model<User>,
   ) {}
 
-  async findAllPosts(): Promise<User[]> {
+  async findAllUsers(): Promise<User[]> {
     return this.userModel.find();
   }
 }

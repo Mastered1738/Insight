@@ -25,6 +25,6 @@
             src="./src/multimedia/anonymous-user.webp"
             alt=""
         />
-        <p class="w-full h-full text-l">Ime Prezime</p>
+        <p class="flex items-center justify-center w-full h-full text-l">Ime Prezime</p>
     </div>
 </div>

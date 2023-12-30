@@ -42,11 +42,11 @@
 	</div>
 	<div class="col-span-2">
 	</div>
-	<div class="fixed right-0 grid w-1/3 h-full grid-rows-2 bg-white border-2 border-solid border-strongpurple">
-		<div class="flex items-center justify-center text-2xl text-white h-1/5 bg-strongpurple">
+	<div class="fixed right-0 flex flex-col w-1/3 h-full bg-white">
+		<div class="flex items-center justify-center text-2xl text-white h-1/6 bg-strongpurple">
 			MOJ KALENDAR
 		</div>
-		<div class="w-5/6 border-2 border-solid h-3/4 border-strongpurple">
+		<div class="w-full grid-rows-3 overflow-y-auto border-2 border-solid h-5/6 border-strongpurple">
 			<Calendar>
 			
 			</Calendar>
